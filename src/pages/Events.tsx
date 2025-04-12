@@ -89,7 +89,7 @@ const Events = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">Events & Activities</h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300">Stay up to date with all the exciting events happening at TechClub.</p>
+            <p className="text-xl text-gray-600 dark:text-gray-300">Stay up to date with all the exciting events happening at CODEC Club.</p>
           </div>
           
           <div className="grid lg:grid-cols-3 gap-8 mb-16">

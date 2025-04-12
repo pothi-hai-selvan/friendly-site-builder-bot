@@ -17,10 +17,10 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           <div className="w-20 h-20 bg-brand-100 dark:bg-brand-900 rounded-full flex items-center justify-center mx-auto mb-6 animate-slide-down opacity-0 [animation-delay:100ms]">
-            <span className="text-3xl text-brand-600 dark:text-brand-400 font-bold">TC</span>
+            <span className="text-3xl text-brand-600 dark:text-brand-400 font-bold">CD</span>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 animate-slide-down opacity-0 [animation-delay:200ms]">
-            Welcome to <span className="text-brand-600 dark:text-brand-400">TechClub</span>
+            Welcome to <span className="text-brand-600 dark:text-brand-400">CODEC Club</span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto animate-slide-down opacity-0 [animation-delay:400ms]">
             Building the next generation of innovators through collaboration, learning, and hands-on projects.
