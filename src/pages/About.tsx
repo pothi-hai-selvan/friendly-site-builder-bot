@@ -9,7 +9,7 @@ import { Code, BookOpen, Award, Users } from "lucide-react";
 const About = () => {
   const coreTeam = [
     { name: "Dr. Rajesh Kumar", role: "Faculty Coordinator", avatar: "R", department: "ECE Department" },
-    { name: "Priya Sharma", role: "Student President", avatar: "P", department: "ECE - Final Year" },
+    { name: "S. P. Pothihai Selvan", role: "Club President", avatar: "P", department: "ECE - Final Year" },
     { name: "Arjun Nair", role: "Technical Lead", avatar: "A", department: "ECE - Final Year" },
     { name: "Meera Patel", role: "Events Coordinator", avatar: "M", department: "ECE - Third Year" },
     { name: "Vikram Singh", role: "Content Manager", avatar: "V", department: "ECE - Third Year" },
@@ -70,13 +70,33 @@ const About = () => {
           <div className="mb-20">
             <h2 className="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white">Our Story</h2>
             <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-bold mb-4 text-brand-600 dark:text-brand-400 text-center">💫 Our Club Story – The Rise of CODEC</h3>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                CODEC Club was established in 2021 by a passionate group of ECE students who recognized the growing importance of software skills in the electronics industry. What began as informal coding sessions in the department lab has evolved into a structured club with regular workshops, hackathons, and industry collaborations.
+                The CODEC Club was first initiated by a passionate group of alumni from the ECE Department, Government College of Engineering, Erode. Their vision was to create a hub for innovation, knowledge sharing, and coding excellence — a space where students could go beyond the syllabus and explore real-world technology.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
+                However, as the years passed and the original founders graduated, the club's activity slowly faded. What once echoed with collaboration and creativity eventually fell silent… like code waiting to be recompiled.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                But in 2025, the spark was reignited.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                Thanks to the support of our respected Head of Department, and the passion of a new wave of tech-driven students, CODEC Club was officially restored. With renewed energy and a future-ready mindset, the club began its second chapter — stronger, smarter, and more focused.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                Leading this revival is S. P. Pothihai Selvan, our current Club President, who is dedicated to building a club where coding meets community — where every student has a place to learn, build, and inspire.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mb-4">
+                CODEC Club is not just a student group — it's a movement.
+                A movement to create projects that matter, bridge the gap between books and reality, and leave behind a digital legacy for the next generation of ECE coders.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 font-medium text-center italic">
+                Join us — let's write the next line of CODEC's story together.
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mt-4">
                 Our name "CODEC" represents our dual focus on <strong>CO</strong>ding and <strong>DEC</strong>oding – symbolizing the intersection of software and electronics that defines modern ECE education.
               </p>
-              <p className="text-gray-700 dark:text-gray-300">
+              <p className="text-gray-700 dark:text-gray-300 mt-4">
                 Today, CODEC Club has over 150 active members from various years of the ECE department. We've completed dozens of collaborative projects, organized department-wide technical events, and established partnerships with tech companies to provide learning and career opportunities for our members.
               </p>
             </div>
