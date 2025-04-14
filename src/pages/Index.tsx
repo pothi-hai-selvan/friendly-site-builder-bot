@@ -2,7 +2,6 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import FeaturesSection from "@/components/FeaturesSection";
 import CtaSection from "@/components/CtaSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -15,10 +14,9 @@ const Index = () => {
     <div className="min-h-screen dark:bg-gray-900 dark:text-white">
       <Navbar />
       <HeroSection />
-      <FeaturesSection />
+      {/* Removed FeaturesSection */}
       <EventPreview />
       <ProjectShowcase />
-      {/* Removed TestimonialsSection */}
       <BlogPreview />
       <CtaSection />
       <ContactSection />
