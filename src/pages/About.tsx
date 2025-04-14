@@ -17,7 +17,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-16 dark:bg-gray-900 dark:text-white">
+    <div className="min-h-screen pt-16 dark:bg-gray-900 dark:text-white font-roboto">
       <Navbar />
       
       <section className="py-16">
@@ -75,7 +75,7 @@ const About = () => {
                 The CODEC Club was first initiated by a passionate group of alumni from the ECE Department, Government College of Engineering, Erode. Their vision was to create a hub for innovation, knowledge sharing, and coding excellence — a space where students could go beyond the syllabus and explore real-world technology.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                However, as the years passed and the original founders graduated, the club's activity slowly faded. What once echoed with collaboration and creativity eventually fell silent… like code waiting to be recompiled.
+                However, as the years passed and the original founders graduated, the club's activity slowly faded. What once echoed with collaboration and creativity eventually fell silent... like code waiting to be recompiled.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 But in 2025, the spark was reignited.
