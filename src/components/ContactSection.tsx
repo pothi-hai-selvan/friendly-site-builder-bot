@@ -79,39 +79,26 @@ const ContactSection = () => {
                 <MapPin className="h-6 w-6 text-brand-600 mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="text-lg font-medium text-gray-900">Address</h4>
-                  <p className="text-gray-600">123 Web Design Street, Digital City, 10001</p>
+                  <p className="text-gray-600">
+                    Government College of Engineering, 
+                    Vasavi Post, 
+                    Erode - 638 316, 
+                    Tamil Nadu, India
+                  </p>
                 </div>
               </div>
               <div className="flex">
                 <Phone className="h-6 w-6 text-brand-600 mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="text-lg font-medium text-gray-900">Phone</h4>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">+91 93458 51104</p>
                 </div>
               </div>
               <div className="flex">
                 <Mail className="h-6 w-6 text-brand-600 mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="text-lg font-medium text-gray-900">Email</h4>
-                  <p className="text-gray-600">info@horizonwebdesign.com</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-8">
-              <h4 className="text-lg font-medium text-gray-900 mb-4">Business Hours</h4>
-              <div className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Monday - Friday:</span>
-                  <span className="text-gray-900">9:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Saturday:</span>
-                  <span className="text-gray-900">10:00 AM - 4:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Sunday:</span>
-                  <span className="text-gray-900">Closed</span>
+                  <p className="text-gray-600">pothihais@gmail.com</p>
                 </div>
               </div>
             </div>
