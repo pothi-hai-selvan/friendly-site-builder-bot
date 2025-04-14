@@ -8,13 +8,14 @@ import { Code, BookOpen, Award, Users } from "lucide-react";
 
 const About = () => {
   const coreTeam = [
-    { name: "Dr. Rajesh Kumar", role: "Faculty Coordinator", avatar: "R", department: "ECE Department" },
-    { name: "S. P. Pothihai Selvan", role: "Club President", avatar: "P", department: "ECE - Final Year" },
-    { name: "Arjun Nair", role: "Technical Lead", avatar: "A", department: "ECE - Final Year" },
-    { name: "Meera Patel", role: "Events Coordinator", avatar: "M", department: "ECE - Third Year" },
-    { name: "Vikram Singh", role: "Content Manager", avatar: "V", department: "ECE - Third Year" },
-    { name: "Ananya Desai", role: "Outreach Director", avatar: "A", department: "ECE - Second Year" },
-  ];
+  { name: "S. P. Pothihai Selvan", role: "President", avatar: "P", department: "ECE - Final Year" },
+  { name: "P. Christoria", role: "Vice President", avatar: "C", department: "ECE - Final Year" },
+  { name: "Shivangi Shree", role: "Public Relationship Officer", avatar: "S", department: "ECE - Third Year" },
+  { name: "Aruna", role: "Secretary", avatar: "A", department: "ECE - Third Year" },
+  { name: "Jeevananthan", role: "Treasurer", avatar: "J", department: "ECE - Third Year" },
+  { name: "Kishore Kumar", role: "Technical Lead", avatar: "K", department: "ECE - Final Year" },
+  { name: "Deva Prakash", role: "Event Coordinator", avatar: "D", department: "ECE - Third Year" }
+];
 
   return (
     <div className="min-h-screen pt-16 dark:bg-gray-900 dark:text-white font-roboto">
