@@ -3,19 +3,25 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
-import { Avatar } from "@/components/ui/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Code, BookOpen, Award, Users } from "lucide-react";
 
 const About = () => {
   const coreTeam = [
-  { name: "S. P. Pothihai Selvan", role: "President", avatar: "P", department: "ECE - Final Year" },
-  { name: "P. Christoria", role: "Vice President", avatar: "C", department: "ECE - Final Year" },
-  { name: "Shivangi Shree", role: "Public Relationship Officer", avatar: "S", department: "ECE - Third Year" },
-  { name: "Aruna", role: "Secretary", avatar: "A", department: "ECE - Third Year" },
-  { name: "Jeevananthan", role: "Treasurer", avatar: "J", department: "ECE - Third Year" },
-  { name: "Kishore Kumar", role: "Technical Lead", avatar: "K", department: "ECE - Final Year" },
-  { name: "Deva Prakash", role: "Event Coordinator", avatar: "D", department: "ECE - Third Year" }
-];
+    { 
+      name: "S. P. Pothihai Selvan", 
+      role: "President", 
+      avatar: "P", 
+      image: "/lovable-uploads/bebad5b5-48c7-4825-a063-57e37b143c12.png",
+      department: "ECE - Final Year" 
+    },
+    { name: "P. Christoria", role: "Vice President", avatar: "C", department: "ECE - Third Year" },
+    { name: "Shivangi Shree", role: "Public Relationship Officer", avatar: "S", department: "ECE - Third Year" },
+    { name: "Aruna", role: "Secretary", avatar: "A", department: "ECE - Third Year" },
+    { name: "Jeevananthan", role: "Treasurer", avatar: "J", department: "ECE - Second Year" },
+    { name: "Kishore Kumar", role: "Technical Lead", avatar: "K", department: "ECE - Second Year" },
+    { name: "Deva Prakash", role: "Event Coordinator", avatar: "D", department: "ECE - Second Year" }
+  ];
 
   return (
     <div className="min-h-screen pt-16 dark:bg-gray-900 dark:text-white font-roboto">
@@ -70,32 +76,32 @@ const About = () => {
           {/* Our Story */}
           <div className="mb-20">
             <h2 className="text-3xl font-bold mb-6 text-center text-gray-900 dark:text-white">Our Story</h2>
-            <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-bold mb-4 text-brand-600 dark:text-brand-400 text-center">💫 Our Club Story – The Rise of CODEC</h3>
+            <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-sm font-roboto">
+              <h3 className="text-2xl font-bold mb-4 text-brand-600 dark:text-brand-400 text-center">Our Club Story The Rise of CODEC</h3>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                The CODEC Club was first initiated by a passionate group of alumni from the ECE Department, Government College of Engineering, Erode. Their vision was to create a hub for innovation, knowledge sharing, and coding excellence — a space where students could go beyond the syllabus and explore real-world technology.
+                The CODEC Club was first initiated by a passionate group of alumni from the ECE Department, Government College of Engineering, Erode. Their vision was to create a hub for innovation, knowledge sharing, and coding excellence a space where students could go beyond the syllabus and explore real-world technology.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                However, as the years passed and the original founders graduated, the club's activity slowly faded. What once echoed with collaboration and creativity eventually fell silent... like code waiting to be recompiled.
+                However, as the years passed and the original founders graduated, the club's activity slowly faded. What once echoed with collaboration and creativity eventually fell silent like code waiting to be recompiled.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
                 But in 2025, the spark was reignited.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                Thanks to the support of our respected Head of Department, and the passion of a new wave of tech-driven students, CODEC Club was officially restored. With renewed energy and a future-ready mindset, the club began its second chapter — stronger, smarter, and more focused.
+                Thanks to the support of our respected Head of Department, and the passion of a new wave of tech-driven students, CODEC Club was officially restored. With renewed energy and a future-ready mindset, the club began its second chapter stronger, smarter, and more focused.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                Leading this revival is S. P. Pothihai Selvan, our current Club President, who is dedicated to building a club where coding meets community — where every student has a place to learn, build, and inspire.
+                Leading this revival is S. P. Pothihai Selvan, our current Club President, who is dedicated to building a club where coding meets community where every student has a place to learn, build, and inspire.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                CODEC Club is not just a student group — it's a movement.
+                CODEC Club is not just a student group it's a movement.
                 A movement to create projects that matter, bridge the gap between books and reality, and leave behind a digital legacy for the next generation of ECE coders.
               </p>
               <p className="text-gray-700 dark:text-gray-300 font-medium text-center italic">
-                Join us — let's write the next line of CODEC's story together.
+                Join us let's write the next line of CODEC's story together.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mt-4">
-                Our name "CODEC" represents our dual focus on <strong>CO</strong>ding and <strong>DEC</strong>oding – symbolizing the intersection of software and electronics that defines modern ECE education.
+                Our name "CODEC" represents our dual focus on <strong>CO</strong>ding and <strong>DEC</strong>oding symbolizing the intersection of software and electronics that defines modern ECE education.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mt-4">
                 Today, CODEC Club has over 150 active members from various years of the ECE department. We've completed dozens of collaborative projects, organized department-wide technical events, and established partnerships with tech companies to provide learning and career opportunities for our members.
@@ -117,9 +123,19 @@ const About = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {coreTeam.map((member) => (
                 <Card key={member.name} className="p-6 text-center dark:bg-gray-800 dark:border-gray-700">
-                  <Avatar className="w-24 h-24 mx-auto mb-4 bg-brand-100 dark:bg-brand-900 text-brand-600 dark:text-brand-400">
-                    <div className="text-2xl font-bold">{member.avatar}</div>
-                  </Avatar>
+                  {member.image ? (
+                    <div className="w-32 h-32 mx-auto mb-4 overflow-hidden rounded-full border-2 border-brand-100 dark:border-brand-900">
+                      <img 
+                        src={member.image} 
+                        alt={member.name} 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <Avatar className="w-24 h-24 mx-auto mb-4 bg-brand-100 dark:bg-brand-900 text-brand-600 dark:text-brand-400">
+                      <AvatarFallback className="text-2xl font-bold">{member.avatar}</AvatarFallback>
+                    </Avatar>
+                  )}
                   <h3 className="text-xl font-bold mb-1 text-gray-900 dark:text-white">{member.name}</h3>
                   <p className="text-brand-600 dark:text-brand-400 font-medium mb-1">{member.role}</p>
                   <p className="text-gray-500 dark:text-gray-400 text-sm">{member.department}</p>
