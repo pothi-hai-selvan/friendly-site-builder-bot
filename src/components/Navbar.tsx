@@ -4,11 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTheme } from "@/components/ThemeProvider";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { isDarkMode, toggleDarkMode } = useTheme();
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,24 +25,31 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close menu when user clicks a link or resizes to desktop
+  useEffect(() => {
+    if (!isMobile && isMenuOpen) {
+      setIsMenuOpen(false);
+    }
+  }, [isMobile, isMenuOpen]);
+
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md py-3 shadow-sm"
-          : "bg-transparent py-5"
+          ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md py-2 md:py-3 shadow-sm"
+          : "bg-transparent py-3 md:py-5"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-brand-700 dark:text-brand-400">
+            <Link to="/" className="text-xl md:text-2xl font-bold text-brand-700 dark:text-brand-400">
               CODEC Club
             </Link>
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8 items-center">
+          <div className="hidden md:flex space-x-6 lg:space-x-8 items-center">
             <Link
               to="/about"
               className="text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 font-medium transition-colors"
@@ -97,6 +106,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-gray-600 dark:text-gray-300 focus:outline-none"
+              aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -113,35 +123,35 @@ const Navbar = () => {
             <div className="flex flex-col space-y-4">
               <Link
                 to="/about"
-                className="text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 font-medium transition-colors"
+                className="text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 font-medium transition-colors px-2 py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About Us
               </Link>
               <Link
                 to="/events"
-                className="text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 font-medium transition-colors"
+                className="text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 font-medium transition-colors px-2 py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Events
               </Link>
               <Link
                 to="/projects"
-                className="text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 font-medium transition-colors"
+                className="text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 font-medium transition-colors px-2 py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Projects
               </Link>
               <Link
                 to="/blog"
-                className="text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 font-medium transition-colors"
+                className="text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 font-medium transition-colors px-2 py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
               </Link>
               <Link
                 to="/join"
-                className="text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 font-medium transition-colors"
+                className="text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 font-medium transition-colors px-2 py-1"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Join Us
