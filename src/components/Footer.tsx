@@ -1,6 +1,4 @@
-
 import React from "react";
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -12,20 +10,6 @@ const Footer = () => {
             <p className="text-gray-400 mb-4">
               ECE Department's coding community at Government College of Engineering, Erode.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           <div>
